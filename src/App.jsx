@@ -1,9 +1,11 @@
 import backgroundImg from "./assets/body-bg.png";
 import Header from "./components/header/Header";
 import WeatherBoard from "./components/weather/WeatherBoard";
+import { WeatherProvider } from "./provider";
 function App() {
   return (
     <>
+    <WeatherProvider>
       <div
         className={`bg-body font-[Roboto] text-light bg-[url('${backgroundImg}')] bg-no-repeat bg-cover h-screen grid place-items-center
         `}
@@ -16,6 +18,7 @@ function App() {
           </section>
         </main>
       </div>
+      </WeatherProvider>
     </>
   );
 }
