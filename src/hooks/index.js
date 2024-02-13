@@ -1,3 +1,3 @@
+import useLocalStorage from "./useStorage";
 import useWeather from "./useWeather";
-
-export {useWeather}
+export { useLocalStorage, useWeather };
