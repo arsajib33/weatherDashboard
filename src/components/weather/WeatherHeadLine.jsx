@@ -9,6 +9,7 @@ import { Weathercontext } from "../../context";
 import { getFormatedDate } from "../../utils/date-utils";
 export default function WeatherHeadLine() {
   const { weatherData } = useContext(Weathercontext);
+
   const { time, temparature, climate } = weatherData;
 
   function getClimateIcon(climate) {
